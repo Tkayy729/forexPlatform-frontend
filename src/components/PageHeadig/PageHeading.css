@@ -1,0 +1,21 @@
+.page-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .page-heading h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .line{
+    height: 1px;
+    width: 50%;
+    background-color: rgb(127, 131, 127);
+    border: none;
+    margin: 10px 0;
+  }

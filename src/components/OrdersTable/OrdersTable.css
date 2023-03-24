@@ -1,0 +1,37 @@
+.table-container {
+  border: 1px solid #ccc;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.table-container.has-scroll {
+  overflow-y: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #0077c2;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e2e2e2;
+}
