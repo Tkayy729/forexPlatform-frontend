@@ -14,7 +14,7 @@ const OrdersTable = ({data}) => {
             <th>Amount</th>
             <th>Exchange</th>
             <th>Provider</th>
-            {/* <th>Bank Account</th> */}
+            <th>Bank Account</th>
             <th>Status</th>
           </tr>
         </thead>
@@ -25,7 +25,7 @@ const OrdersTable = ({data}) => {
               <td>{order.amount}</td>
               <td>{order.exchange}</td>
               <td>{`Provider ${order.provider}`}</td>
-              {/* <td>{order.bankAccount}</td> */}
+              <td>{order.bankAccount.bankName} {order.bankAccount.accountNumber}</td>
               <td>{order.status}</td>
             </tr>
           ))}

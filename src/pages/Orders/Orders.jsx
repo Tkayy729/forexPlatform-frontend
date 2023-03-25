@@ -15,7 +15,7 @@ const Orders = () => {
           Authorization: `Bearer ${token}`
         }
       });
-      console.log(response)
+      console.log(response.data)
       setData(response.data);
     } catch (error) {
       console.log(error);

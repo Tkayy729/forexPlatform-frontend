@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Navbar from "../../components/Navbar/Navbar";
 import PageHeading from "../../components/PageHeadig/PageHeading";
@@ -34,6 +34,7 @@ const BankAccountPage = () => {
     fetchData();
   }, []);
 
+  let navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -52,10 +53,10 @@ const BankAccountPage = () => {
         }
       );
       console.log(response);
-
+     
       if (response.status === 201) {
         toast.success("added bank successfully!");
-        Navigate("/banks");
+        navigate("/banks");
         setAccountNumber("");
         setBankName("");
         setName("");
