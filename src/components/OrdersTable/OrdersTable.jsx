@@ -19,7 +19,7 @@ const OrdersTable = ({data}) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((order) => (
+           {data && data.map((order) => (
             <tr key={order.orderId}>
               <td>{order.orderId}</td>
               <td>{order.amount}</td>
