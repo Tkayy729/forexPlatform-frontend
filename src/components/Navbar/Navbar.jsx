@@ -19,21 +19,14 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/orders">
             {" "}
-            <a>Pending Orders</a>
+            <a>Placed Orders</a>
           </Link>
-        </li>
-        <li className="nav-item">
-          <a>Purchased Orders</a>
         </li>
         <li className="nav-item">
         <Link to="/banks"> <a>Bank Accounts</a> </Link>  
         </li>
-        <li className="nav-item">
-          <a>Profile</a>
-        </li>
       </ul>
       <div className="name">
-        <p>Emmanuel</p>
         <div onClick={handlelogout} className="logo">
           <LogoutIcon alt="logout" />
         </div>
