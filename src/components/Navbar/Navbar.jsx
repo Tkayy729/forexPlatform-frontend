@@ -26,7 +26,7 @@ const Navbar = () => {
           <a>Purchased Orders</a>
         </li>
         <li className="nav-item">
-          <a>Bank Accounts</a>
+        <Link to="/banks"> <a>Bank Accounts</a> </Link>  
         </li>
         <li className="nav-item">
           <a>Profile</a>

@@ -5,6 +5,7 @@ import "./Home.css"
 import PageHeading from "../../components/PageHeadig/PageHeading";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import { BASE_URL } from "../../Utils/BaseUrl";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -12,9 +13,9 @@ const Home = () => {
   const fetchData = async () => {
     const token = localStorage.getItem("authToken");
     try {
-      const response = await axios.get('http://localhost:8081/api/v1/provider', {
+      const response = await axios.get(`${BASE_URL}/provider`, {
         headers: {
-          Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${token}`,
         }
       });
       console.log(response)

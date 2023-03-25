@@ -5,6 +5,8 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import Home from './pages/Home/Home';
 import Orders from './pages/Orders/Orders';
+import BankAccountPage from './pages/BankAccountPage/BankAccountPage';
+import PlaceOrder from './pages/PlaceOrderPage/PlaceOrder';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             <Route path="/register" element={<SignUpPage />} />
             <Route path="/home" element={<Home />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/placeOrder" element={<PlaceOrder />} />
+            <Route path="/banks" element={<BankAccountPage />} />
           </Routes>
        </BrowserRouter>
     </div>
